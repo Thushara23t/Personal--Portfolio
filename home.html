@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>porfolio-thusha</title>
+    <link rel="stylesheet" href="homecss.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <div class="detail">
+                <h1>I'm <span>Thushara</span></h1>
+                <h2>Master in Computer Application</h2>
+                <a href="Thushara.pdf">RESUME</a>
+            </div>
+           
+        </div>
+    </div>
+
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-col-1">
+                <h2>Profile</h2>
+                <p>"I have a particular passion for web design and have created a number of front-end designs that highlight my technical
+                    prowess and inventiveness. I can't wait to put my academic understanding to use in practical tasks and acquire real-world
+                    experience. Having good collaborative skills, strong leadership qualities, and efficient communication are some
+                    of my primary talents. In addition, I pick things up quickly and am constantly trying to learn new things and challenge
+                    myself."</p>
+            </div>
+            <div class="about-col-2">
+                <img src="thusha.jpeg" alt="Profile Image"class="small-profile-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skill-images">
+            <img src="htmlimage.png" alt="HTML">
+            <img src="cssimage.png" alt="CSS">
+            <img src="javacriptimage.png" alt="JavaScript">
+            <img src="pyimage.jpg" alt="Python">
+            <img src="javaimage.png" alt="Java">
+            <img src="sqlimage.jpg" alt="MySQL">
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-images">
+            <img src="weddingmantras.png" alt="Project Image">
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Certificates</h2>
+        <div class="skill-images">
+            <a href="gitcourse.png" target="_blank">
+                <img src="gitcourse.png" alt="HTML Certificate">
+            </a>
+            
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="contact-form">
+                <h3>Contact Me</h3>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="button" onclick="submitForm()">Submit</button>
+
+                </form>
+            </div>
+
+            <div class="contact-details">
+                <h3>Contact Details</h3>
+                <p>Email: <a href="mailto:thusharakarkera26@gmail.com">thusharakarkera26@gmail.com</a></p>
+                
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/your-profile" target="_blank">
+                        <img src="linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/your-profile" target="_blank">
+                        <img src="git.png" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function submitForm() {
+            const form = document.getElementById('contactForm');
+            const url = https://script.google.com/u/0/home/projects/1S3yQn38e_J2GA0q-V06AVSROz1Yp0SmBCAituYVpeL6Rx1_txYVvprfH/edit'; // Replace with your Google Apps Script URL
+    
+            fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    name: form.name.value,
+                    email: form.email.value,
+                    message: form.message.value
+                })
+            })
+            .then(response => response.text())
+            .then(data => {
+                console.log(data); // Log success or provide user feedback
+                form.reset(); // Reset form after submission
+            })
+            .catch(error => console.error('Error!', error.message));
+        }
+    </script>
+
+
+</body>
+
+</html>

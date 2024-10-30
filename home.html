@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>porfolio-thusha</title>
+    <title>Wedding Mantras</title>
     <link rel="stylesheet" href="homecss.css">
 </head>
 
@@ -23,25 +23,21 @@
             <div class="detail">
                 <h1>I'm <span>Thushara</span></h1>
                 <h2>Master in Computer Application</h2>
-                <a href="Thushara.pdf">RESUME</a>
+                <a href="Thushara.pdf" class="resume-button">RESUME</a>
             </div>
-           
         </div>
     </div>
-
 
     <section id="about" class="about">
         <div class="container">
             <div class="about-col-1">
                 <h2>Profile</h2>
-                <p>"I have a particular passion for web design and have created a number of front-end designs that highlight my technical
-                    prowess and inventiveness. I can't wait to put my academic understanding to use in practical tasks and acquire real-world
-                    experience. Having good collaborative skills, strong leadership qualities, and efficient communication are some
-                    of my primary talents. In addition, I pick things up quickly and am constantly trying to learn new things and challenge
-                    myself."</p>
+                <p>""I have a deep passion for web design and development, with a growing portfolio of front-end projects that showcase my
+                     technical skills and creative flair. I’m eager to bridge the gap between my academic knowledge and real-world applications,
+                      looking forward to tackling challenges that let me expand my expertise and bring fresh, innovative ideas to life.""</p>
             </div>
             <div class="about-col-2">
-                <img src="thusha.jpeg" alt="Profile Image"class="small-profile-img">
+                <img src="thusha.jpeg" alt="Profile Image">
             </div>
         </div>
     </section>
@@ -51,86 +47,56 @@
         <div class="skill-images">
             <img src="htmlimage.png" alt="HTML">
             <img src="cssimage.png" alt="CSS">
-            <img src="javacriptimage.png" alt="JavaScript">
             <img src="pyimage.jpg" alt="Python">
-            <img src="javaimage.png" alt="Java">
             <img src="sqlimage.jpg" alt="MySQL">
         </div>
     </section>
 
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="project-images">
-            <img src="weddingmantras.png" alt="Project Image">
-        </div>
-    </section>
 
-    <section id="skills" class="skills">
-        <h2>Certificates</h2>
-        <div class="skill-images">
-            <a href="gitcourse.png" target="_blank">
-                <img src="gitcourse.png" alt="HTML Certificate">
-            </a>
-            
+<!--Project Section-->
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    
+    <div class="project-container">
+        <!-- Project 1 -->
+        <div class="project">
+            <div class="project-description">
+                <h3>Wedding Mantras</h3>
+                <p>A wedding planning platform that streamlines the booking of services like venues, catering, and photography. Utilizing HTML, CSS, and JavaScript on the front end and PHP on the back end, it offers a user-friendly interface for customers to easily browse and book services tailored to their needs.</p>
+                <p>
+                    <a href="https://github.com/Thushara23t/wedding_mantras" target="_blank" class="github-link">View on GitHub</a>
+                </p>
+            </div>
         </div>
-    </section>
+        
+        <!-- Project 2 -->
+        <div class="project">
+            <div class="project-description">
+                <h3>Postal Account</h3>
+                <p> Is a financial management platform developed using C# and MySQL, allowing customers to manage transactions, savings accounts, and fixed deposits efficiently. With its user-friendly interface, users can easily track financial activities, monitor account balances, and manage their savings, ensuring a seamless and effective banking experience.</p>
+                <p>
+                    <a href="https://github.com/Thushara23t/postal__account" target="_blank" class="github-link">View on GitHub</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 
     <footer id="contact">
-        <div class="footer-container">
-            <div class="contact-form">
-                <h3>Contact Me</h3>
-                <form action="#" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                    <button type="button" onclick="submitForm()">Submit</button>
-
-                </form>
-            </div>
-
+        
+          
             <div class="contact-details">
                 <h3>Contact Details</h3>
                 <p>Email: <a href="mailto:thusharakarkera26@gmail.com">thusharakarkera26@gmail.com</a></p>
                 
                 <div class="social-links">
-                    <a href="https://linkedin.com/in/your-profile" target="_blank">
+                    <a href="https://www.linkedin.com/in/thushara-karkera-b43056332/" target="_blank">
                         <img src="linkedin.png" alt="LinkedIn">
                     </a>
-                    <a href="https://github.com/your-profile" target="_blank">
+                    <a href="https://github.com/" target="_blank">
                         <img src="git.png" alt="GitHub">
                     </a>
                 </div>
             </div>
-        </div>
+       
     </footer>
-
-    <script>
-        function submitForm() {
-            const form = document.getElementById('contactForm');
-            const url = https://script.google.com/u/0/home/projects/1S3yQn38e_J2GA0q-V06AVSROz1Yp0SmBCAituYVpeL6Rx1_txYVvprfH/edit'; // Replace with your Google Apps Script URL
-    
-            fetch(url, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    name: form.name.value,
-                    email: form.email.value,
-                    message: form.message.value
-                })
-            })
-            .then(response => response.text())
-            .then(data => {
-                console.log(data); // Log success or provide user feedback
-                form.reset(); // Reset form after submission
-            })
-            .catch(error => console.error('Error!', error.message));
-        }
-    </script>
-
-
-</body>
-
-</html>

@@ -4,99 +4,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Mantras</title>
+    <title>My-Portfolio</title>
     <link rel="stylesheet" href="homecss.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body>
-    <nav>
-        <ul>
+<!-- Navbar Section -->
+<nav class="navbar">
+    <div class="navbar-container">
+        <div class="navbar-brand">Thushara</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
+    </div>
+</nav>
 
-    <div class="hero">
-        <div class="hero-content">
-            <div class="detail">
-                <h1>I'm <span>Thushara</span></h1>
-                <h2>Master in Computer Application</h2>
-                <a href="Thushara.pdf" class="resume-button">RESUME</a>
-            </div>
+  <!-- Split Layout Hero Section -->
+<div class="hero">
+    <div class="hero-container">
+        <div class="hero-left">
+            <img src="thusha.jpeg" alt="Thushara" class="profile-img">
+        </div>
+        <div class="hero-right">
+            <h1>Thushara</h1>
+            <h2>I'm a developer</h2>
+            <a href="Thushara .pdf" class="resume-button">View My Resume📄</a>
         </div>
     </div>
+</div>
 
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-col-1">
-                <h2>Profile</h2>
-                <p>""I have a deep passion for web design and development, with a growing portfolio of front-end projects that showcase my
-                     technical skills and creative flair. I’m eager to bridge the gap between my academic knowledge and real-world applications,
-                      looking forward to tackling challenges that let me expand my expertise and bring fresh, innovative ideas to life.""</p>
-            </div>
-            <div class="about-col-2">
-                <img src="thusha.jpeg" alt="Profile Image">
-            </div>
-        </div>
-    </section>
+<!--about section-->
+<div class="about-section" id="about">
+    <h2>About Me</h2>
+    <p>Hi! I’m Thushara, a passionate software developer based in Mangalore. I have completed my Master’s in Computer Applications at St Joseph Engineering College, after completing my Bachelor’s at St Agnes College.</p>
+    <p>Throughout my academic career, I’ve worked on several projects, including mobile apps, machine learning models, MERN stack applications, and full-stack development.</p>
+    <p>As I move forward in my career, I’m eager to delve deeper into emerging technologies like <strong>AI</strong>, and <strong>Machine Learning</strong>. I’m always open to collaborating with like-minded professionals to innovate and create meaningful solutions.</p>
+</div>
 
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <div class="skill-images">
-            <img src="htmlimage.png" alt="HTML">
-            <img src="cssimage.png" alt="CSS">
-            <img src="pyimage.jpg" alt="Python">
-            <img src="sqlimage.jpg" alt="MySQL">
-        </div>
-    </section>
+<!--skill section-->
+<section class="skills-section" id="skills">
+  <h2>Technical Skills</h2>
 
-
-<!--Project Section-->
-<section id="projects" class="projects">
-    <h2>Projects</h2>
-    
-    <div class="project-container">
-        <!-- Project 1 -->
-        <div class="project">
-            <div class="project-description">
-                <h3>Wedding Mantras</h3>
-                <p>A wedding planning platform that streamlines the booking of services like venues, catering, and photography. Utilizing HTML, CSS, and JavaScript on the front end and PHP on the back end, it offers a user-friendly interface for customers to easily browse and book services tailored to their needs.</p>
-                <p>
-                    <a href="https://github.com/Thushara23t/wedding_mantras" target="_blank" class="github-link">View on GitHub</a>
-                </p>
-            </div>
-        </div>
-        
-        <!-- Project 2 -->
-        <div class="project">
-            <div class="project-description">
-                <h3>Postal Account</h3>
-                <p> Is a financial management platform developed using C# and MySQL, allowing customers to manage transactions, savings accounts, and fixed deposits efficiently. With its user-friendly interface, users can easily track financial activities, monitor account balances, and manage their savings, ensuring a seamless and effective banking experience.</p>
-                <p>
-                    <a href="https://github.com/Thushara23t/postal__account" target="_blank" class="github-link">View on GitHub</a>
-                </p>
-            </div>
-        </div>
+  <!-- Programming Languages -->
+  <div class="skill-category">
+    <h3>Programming Languages</h3>
+    <div class="skill-list">
+      <div class="skill-item">Python</div>
+      <div class="skill-item">HTML</div>
+      <div class="skill-item">CSS</div>
+      <div class="skill-item">SQL</div>
     </div>
+  </div>
+
+  <!-- Frameworks / Libraries -->
+  <div class="skill-category">
+    <h3>Frameworks & Libraries</h3>
+    <div class="skill-list">
+      <div class="skill-item">React</div>
+      <div class="skill-item">Node.js</div>
+      <div class="skill-item">Flask</div>
+      <div class="skill-item">Tailwind CSS</div>
+    </div>
+  </div>
+
+  <!-- Tools & Technologies -->
+  <div class="skill-category">
+    <h3>Tools & Technologies</h3>
+    <div class="skill-list">
+      <div class="skill-item">GitHub</div>
+      <div class="skill-item">VS Code</div>
+      <div class="skill-item">PyCharm</div>
+      <div class="skill-item">Firebase</div>
+      <div class="skill-item">Google Colab</div>
+    </div>
+  </div>
+
+  <!-- Domains -->
+  <div class="skill-category">
+    <h3>Technologies & Domains</h3>
+    <div class="skill-list">
+      <div class="skill-item">Data Analytics</div>
+      <div class="skill-item">Machine Learning</div>
+      <div class="skill-item">Web Development</div>
+      <div class="skill-item">Mobile App Development (Flutter)</div>
+    </div>
+  </div>
 </section>
 
-    <footer id="contact">
-        
-          
-            <div class="contact-details">
-                <h3>Contact Details</h3>
-                <p>Email: <a href="mailto:thusharakarkera26@gmail.com">thusharakarkera26@gmail.com</a></p>
-                
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/thushara-karkera-b43056332/" target="_blank">
-                        <img src="linkedin.png" alt="LinkedIn">
-                    </a>
-                    <a href="https://github.com/" target="_blank">
-                        <img src="git.png" alt="GitHub">
-                    </a>
-                </div>
-            </div>
-       
-    </footer>
+  
+
+<!-- Projects section -->
+<section class="projects-section" id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      
+      <!-- QPMS Project -->
+      <div class="project-card">
+        <h3>Question Paper Management System (QPMS)</h3>
+        <p>A system for managing question papers with automated generation based on input criteria. Developed using React, Node.js, and MongoDB.</p>
+        <a href="hub.com/Thushara23t/questionpaper_generation" target="_blank">View on GitHub</a>
+      </div>
+
+      <!-- Portfolio Project -->
+      <div class="project-card">
+        <h3>Portfolio</h3>
+        <p>Personal portfolio website showcasing various projects and skills. Built with HTML, CSS, and JavaScript.</p>
+        <a href="https://github.com/Thushara23t/Personal--Portfolio" target="_blank">View on GitHub</a>
+      </div>
+
+      <!-- Wedding Mantras Project -->
+      <div class="project-card">
+        <h3>Wedding Mantras</h3>
+        <p>A wedding planning application offering tips, checklists, and event management tools. Developed using HTML,CSS,Javascript and Xaamp.</p>
+        <a href="https://github.com/Thushara23t/wedding_mantras" target="_blank">View on GitHub</a>
+      </div>
+
+      <!-- Postal Accounts Project -->
+      <div class="project-card">
+        <h3>Postal Accounts</h3>
+        <p>A full-stack postal account management system with user and admin modules. Built using C# .Net.</p>
+        <a href="https://github.com/Thushara23t/postal__account" target="_blank">View on GitHub</a>
+      </div>
+
+    </div>
+</section>
+  
+<!--Footer section-->
+<footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Thushara | All Rights Reserved</p>
+      <ul class="footer-links">
+        <li>
+          <a href="https://www.linkedin.com/in/thushara-karkera-b43056332/" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="mailto:thusharakarkera26@gmail.com" target="_blank">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Thushara23t" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  
+
+</body>
+</html>

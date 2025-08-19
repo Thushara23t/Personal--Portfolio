@@ -1,164 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My-Portfolio</title>
-    <link rel="stylesheet" href="homecss.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Navbar</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="homecss.css">
 </head>
-
 <body>
-<!-- Navbar Section -->
-<nav class="navbar">
-    <div class="navbar-container">
-        <div class="navbar-brand">Thushara</div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
-    </div>
-</nav>
 
-  <!-- Split Layout Hero Section -->
-<div class="hero">
-    <div class="hero-container">
-        <div class="hero-left">
-            <img src="thusha.jpeg" alt="Thushara" class="profile-img">
-        </div>
-        <div class="hero-right">
-            <h1>Thushara</h1>
-            <h2>I'm a developer</h2>
-            <a href="Thushara .pdf" class="resume-button">View My Resume📄</a>
-        </div>
+  <!-- Navbar -->
+  <nav>
+    <!-- Centered nav links -->
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <span class="name">Thushara</span>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
     </div>
+
+    <!-- Resume Button (right corner) -->
+    <a href="Thushara.pdf" target="_blank" class="resume-btn">Download Resume</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="thusha.jpeg" alt="Thushara Photo">
+    <div class="hero-text">
+      <h1>Hello, I'm Thushara 👋</h1>
+      <p>
+        A passionate web developer with a creative eye for design.  
+        I love building clean, modern, and interactive web experiences.  
+      </p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+<section class="about" id="about">
+  <h2>About Me</h2>
+
+  <div class="about-container">
+    <!-- Left Side: About Me -->
+<div class="about-tech">
+  <h3><i class="fas fa-user"></i> About Me</h3>
+  <p>
+    Hi! I’m <strong>Thushara</strong>, a passionate software developer based in 
+    <strong>Mangalore</strong>. I hold a Master’s in Computer Applications from 
+    St Joseph Engineering College, after completing my Bachelor’s at 
+    St Agnes College.
+  </p>
+  <p>
+    I have worked on diverse projects including mobile apps, machine learning 
+    models, MERN stack applications, and full-stack development.
+  </p>
+  <p>
+    Currently, I’m eager to dive deeper into emerging technologies like 
+    <strong>AI</strong> and <strong>Machine Learning</strong>, and I enjoy 
+    collaborating with like-minded professionals to build innovative and 
+    meaningful solutions.
+  </p>
 </div>
 
-<!--about section-->
-<div class="about-section" id="about">
-    <h2>About Me</h2>
-    <p>Hi! I’m Thushara, a passionate software developer based in Mangalore. I have completed my Master’s in Computer Applications at St Joseph Engineering College, after completing my Bachelor’s at St Agnes College.</p>
-    <p>Throughout my academic career, I’ve worked on several projects, including mobile apps, machine learning models, MERN stack applications, and full-stack development.</p>
-    <p>As I move forward in my career, I’m eager to delve deeper into emerging technologies like <strong>AI</strong>, and <strong>Machine Learning</strong>. I’m always open to collaborating with like-minded professionals to innovate and create meaningful solutions.</p>
-</div>
-
-<!--skill section-->
-<section class="skills-section" id="skills">
-  <h2>Technical Skills</h2>
-
-  <!-- Programming Languages -->
-  <div class="skill-category">
-    <h3>Programming Languages</h3>
-    <div class="skill-list">
-      <div class="skill-item">Python</div>
-      <div class="skill-item">HTML</div>
-      <div class="skill-item">CSS</div>
-      <div class="skill-item">SQL</div>
-    </div>
-  </div>
-
-  <!-- Frameworks / Libraries -->
-  <div class="skill-category">
-    <h3>Frameworks & Libraries</h3>
-    <div class="skill-list">
-      <div class="skill-item">React</div>
-      <div class="skill-item">Node.js</div>
-      <div class="skill-item">Flask</div>
-      <div class="skill-item">Tailwind CSS</div>
-    </div>
-  </div>
-
-  <!-- Tools & Technologies -->
-  <div class="skill-category">
-    <h3>Tools & Technologies</h3>
-    <div class="skill-list">
-      <div class="skill-item">GitHub</div>
-      <div class="skill-item">VS Code</div>
-      <div class="skill-item">PyCharm</div>
-      <div class="skill-item">Firebase</div>
-      <div class="skill-item">Google Colab</div>
-    </div>
-  </div>
-
-  <!-- Domains -->
-  <div class="skill-category">
-    <h3>Technologies & Domains</h3>
-    <div class="skill-list">
-      <div class="skill-item">Data Analytics</div>
-      <div class="skill-item">Machine Learning</div>
-      <div class="skill-item">Web Development</div>
-      <div class="skill-item">Mobile App Development (Flutter)</div>
-    </div>
-  </div>
-</section>
-
-  
-
-<!-- Projects section -->
-<section class="projects-section" id="projects">
-    <h2>Projects</h2>
-    <div class="projects-container">
+    <!-- Right Side: Education -->
+    <div class="about-edu">
+      <h3><i class="fas fa-graduation-cap"></i> Education</h3>
       
-      <!-- QPMS Project -->
-      <div class="project-card">
-        <h3>Question Paper Management System (QPMS)</h3>
-        <p>A system for managing question papers with automated generation based on input criteria. Developed using React, Node.js, and MongoDB.</p>
-        <a href="hub.com/Thushara23t/questionpaper_generation" target="_blank">View on GitHub</a>
+      <div class="edu-tabs">
+        <button class="edu-btn active" data-target="sslc">SSLC</button>
+        <button class="edu-btn" data-target="puc">PUC</button>
+        <button class="edu-btn" data-target="degree">Degree</button>
+        <button class="edu-btn" data-target="masters">Masters</button>
       </div>
 
-      <!-- Portfolio Project -->
-      <div class="project-card">
-        <h3>Portfolio</h3>
-        <p>Personal portfolio website showcasing various projects and skills. Built with HTML, CSS, and JavaScript.</p>
-        <a href="https://github.com/Thushara23t/Personal--Portfolio" target="_blank">View on GitHub</a>
+      <div class="edu-content">
+        <div id="sslc" class="edu-detail active">
+          <h4>SSLC</h4>
+          <p>Navachethana English Medium School,<br>Neermarga -Mangalore (2018).</p>
+        </div>
+        <div id="puc" class="edu-detail">
+          <h4>PUC</h4>
+          <p>Dr. NSAM pre-University College,<br>Nanthoor-Mangalore<br> CBAS (2018 - 2020).</p>
+        </div>
+        <div id="degree" class="edu-detail">
+          <h4>Bachelor's Degree</h4>
+          <p>St. Agnes College(Autonomous),<Br>Bendoor-Mangalore<br>BCA (2020 - 2023).</p>
+        </div>
+        <div id="masters" class="edu-detail">
+          <h4>Masters</h4>
+          <p>St.Joseph Engineering College,<br>Vamanjoor-Mangalore<br>MCA (2023-2025).</p>
+        </div>
       </div>
-
-      <!-- Wedding Mantras Project -->
-      <div class="project-card">
-        <h3>Wedding Mantras</h3>
-        <p>A wedding planning application offering tips, checklists, and event management tools. Developed using HTML,CSS,Javascript and Xaamp.</p>
-        <a href="https://github.com/Thushara23t/wedding_mantras" target="_blank">View on GitHub</a>
-      </div>
-
-      <!-- Postal Accounts Project -->
-      <div class="project-card">
-        <h3>Postal Accounts</h3>
-        <p>A full-stack postal account management system with user and admin modules. Built using C# .Net.</p>
-        <a href="https://github.com/Thushara23t/postal__account" target="_blank">View on GitHub</a>
-      </div>
-
     </div>
+  </div>
 </section>
+
+<!-- Technical Skills Section -->
+<section class="skills-section" id="skills">
+  <h2><i class="fas fa-laptop-code"></i> Technical Skills</h2>
   
-<!--Footer section-->
-<footer class="footer">
-    <div class="footer-content">
-      <p>&copy; 2025 Thushara | All Rights Reserved</p>
-      <ul class="footer-links">
-        <li>
-          <a href="https://www.linkedin.com/in/thushara-karkera-b43056332/" target="_blank">
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </a>
-        </li>
-        <li>
-          <a href="mailto:thusharakarkera26@gmail.com" target="_blank">
-            <i class="fas fa-envelope"></i> Email
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/Thushara23t" target="_blank">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-        </li>
+  <div class="skills-grid">
+    <!-- Programming Languages -->
+    <div class="skill-box">
+      <h3><i class="fas fa-code"></i> Programming Languages</h3>
+      <ul>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>SQL</li>
       </ul>
     </div>
-  </footer>
-  
+
+    <!-- Frameworks & Libraries -->
+    <div class="skill-box">
+      <h3><i class="fas fa-cubes"></i> Frameworks & Libraries</h3>
+      <ul>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Flask</li>
+        <li>Tailwind CSS</li>
+      </ul>
+    </div>
+
+    <!-- Tools & Technologies -->
+    <div class="skill-box">
+      <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+      <ul>
+        <li>GitHub</li>
+        <li>VS Code</li>
+        <li>PyCharm</li>
+        <li>Firebase</li>
+        <li>Google Colab</li>
+      </ul>
+    </div>
+
+    <!-- Technologies & Domains -->
+    <div class="skill-box">
+      <h3><i class="fas fa-project-diagram"></i> Technologies & Domains</h3>
+      <ul>
+        <li>Data Analytics</li>
+        <li>Machine Learning</li>
+        <li>Web Development</li>
+        <li>Mobile App Development (Flutter)</li>
+      </ul>
+    </div>
+
+    <!-- Projects -->
+    <div class="skill-box">
+      <h3><i class="fas fa-folder-open"></i> Projects</h3>
+      <ul>
+        <li>MERN Stack Applications</li>
+        <li>Mobile Apps</li>
+        <li>Machine Learning Models</li>
+        <li>Full-Stack Development</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!---Projects-->
+<section class="projects" id="projects">
+  <h2><i class="fas fa-star"></i> My Projects</h2>
+
+  <div class="masonry">
+    <div class="masonry-item">
+      <div class="glass-card">
+        <h3>Question Paper Management System (QPMS)</h3>
+        <p>A system for managing question papers with automated generation based on input criteria. Developed using React, Node.js, and MongoDB..</p>
+        <a href="https://github.com/Thushara23t/questionpaper_generation">View Code from GitHub</a>
+      </div>
+    </div>
+    <div class="masonry-item">
+      <div class="glass-card">
+        <h3>Wedding Mantras</h3>
+        <p>A wedding planning application offering tips, checklists, and event management tools. Developed using HTML,CSS,Javascript and Xaamp..</p>
+        <a href="https://github.com/Thushara23t/wedding_mantras">View Codde From GitHub</a>
+      </div>
+    </div>
+    <div class="masonry-item">
+      <div class="glass-card">
+        <h3>Postal Account</h3>
+        <p>A full-stack postal account management system with user and admin modules. Built using C# .Net.</p>
+        <a href="https://github.com/Thushara23t/postal__account">View Code From GitHub</a>
+      </div>
+    </div>
+    <div class="masonry-item">
+      <div class="glass-card">
+        <h3>Portfolio Website</h3>
+        <p>Personal portfolio website showcasing various projects and skills. Built with HTML, CSS, and JavaScript..</p>
+        <a href="file:///D:/MY%20PROJECTS/Portfoliothusha/index.html">View Project</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="social-icons">
+      <a href="https://github.com/Thushara23t" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/thushara-karkera-b43056332/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:thusharakarkera26@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>© 2025 Thushara | All Rights Reserved</p>
+  </div>
+</footer>
+
+
+
+
+<!-- FontAwesome Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- JS for Tabs -->
+<script>
+  const buttons = document.querySelectorAll(".edu-btn");
+  const details = document.querySelectorAll(".edu-detail");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      // Remove active class from all
+      buttons.forEach(b => b.classList.remove("active"));
+      details.forEach(d => d.classList.remove("active"));
+
+      // Add active to clicked
+      btn.classList.add("active");
+      document.getElementById(btn.dataset.target).classList.add("active");
+    });
+  });
+</script>
 
 </body>
 </html>
